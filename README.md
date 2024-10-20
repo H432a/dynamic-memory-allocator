@@ -3,6 +3,8 @@ Project Link <a href="https://dynamic-memory-allocator.glitch.me" target="_blank
 ## Overview
 This project implements a dynamic memory allocator using linked lists in Python. It includes features for memory allocation, freeing, merging of free blocks, and visualization of memory blocks in a web interface.
 
+I have used Data structures and Algorithms concepts to implement the same
+
 ## Features
 - **Dynamic Memory Allocation**: Efficiently allocates and frees memory blocks during runtime.
 - **Linked List Structure**: Uses a linked list to manage memory blocks, allowing for efficient allocation and deallocation.
@@ -14,7 +16,6 @@ This project implements a dynamic memory allocator using linked lists in Python.
 ### Prerequisites
 - Python 3.x
 - Flask
-- (Any other dependencies specified in `requirements.txt`)
 
 ### Installation
 1. Clone the repository:
