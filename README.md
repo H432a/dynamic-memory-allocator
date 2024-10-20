@@ -1,4 +1,4 @@
-# Dynamic Memory Allocator
+# Dynamic Memory Allocator : https://dynamic-memory-allocator.glitch.me
 
 ## Overview
 This project implements a dynamic memory allocator using linked lists in Python. It includes features for memory allocation, freeing, merging of free blocks, and visualization of memory blocks in a web interface.
