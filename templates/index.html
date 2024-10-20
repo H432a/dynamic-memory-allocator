@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Memory Allocator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Dynamic Memory Allocator with Linked List </h1>
+
+    <form id="allocateForm">
+        <input type="number" name="size" placeholder="Enter size to allocate" required>
+        <button type="submit">Allocate</button>
+    </form>
+
+    <form id="freeForm">
+        <input type="number" name="size" placeholder="Enter size to free" required>
+        <button type="submit">Free</button>
+    </form>
+
+    <div id="memoryVisualization">
+        <h2>Memory Blocks</h2>
+        <div id="linkedList"></div>
+    </div>
+
+    <script src="/static/script.js"></script>
+
+    <div id="explanation">
+        <h2>Concepts of Dynamic Memory Allocation</h2>
+        <p>Dynamic memory allocation allows programs to allocate and release memory at runtime based on current needs.</p> 
+        <p>This makes memory usage more efficient compared to static memory allocation, where the size is fixed at compile time.</p>
+
+        <h2>How Memory Allocation Works</h2>
+        <ul>
+            <li>Memory is requested and allocated in <b>blocks</b> during runtime.</li>
+            <li>If a block with sufficient memory is found, it is <b>allocated</b> to the program.</li>
+            <li>If the block is larger than needed, the remaining space is split into a new <b>free block</b>.</li>
+            <li>When memory is no longer needed, the allocated block is freed.</li>
+            <li>Any adjacent free blocks are <b>merged</b> to form a larger free block, preventing fragmentation.</li>
+        </ul>
+
+        <h2>How Linked Lists Manage Memory Blocks</h2>
+        <p>A <strong>linked list</strong> is a sequence of nodes connected via pointers, used to store the memory blocks in our dynamic memory allocator:</p>
+        <ul>
+            <li>Each node (block) stores:
+                <ul>
+                    <li>  Size: The amount of memory in the block.</li>
+                    <li>  Status: Whether the block is free or allocated.</li>
+                    <li>  Pointer (Next): A reference to the next block in the list.</li>
+                </ul>
+            </li>
+            <li>The linked list allows us to efficiently traverse the memory blocks and find the best-fit block for allocation.</li>
+            <li>During <b>allocation</b>, a block may be split, and during <b>freeing</b>, adjacent free blocks are merged.</li>
+        </ul>
+    </div>
+
+</body>
+</html>
+
+

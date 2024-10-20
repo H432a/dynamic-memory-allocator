@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+#explanation {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Add this to your style.css */
+ul {
+    list-style-position: inside; /* Keeps bullet points inside the padding */
+    padding-left: 0; /* Removes default padding */
+    text-align: left; /* Ensures text is aligned to the left */
+}
+
+ul li {
+    text-align: left; /* Aligns text within list items to the left */
+}
+
+form {
+    margin: 15px 0;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    width: 200px;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#memoryVisualization {
+    margin: 20px;
+}
+
+#linkedList {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block {
+    padding: 10px;
+    border: 2px solid #333;
+    width: 60px;
+    text-align: center;
+}
+
+.free {
+    background-color: #4CAF50;
+}
+
+.allocated {
+    background-color: #FF5252;
+}
+

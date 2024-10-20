@@ -1,0 +1,2 @@
+Flask==2.3.2      # For building the web application
+pytest==7.4.2     # For running unit tests (alternative to unittest)
